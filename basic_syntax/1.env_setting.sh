@@ -31,8 +31,48 @@ git remote add origin 레포주소
 # 원격지 주소 삭제
 git remote remove origin 레포주소
 
-# 원격지 주소 삭제
+# 원격지 주소 수정
 git remote set-url origin 레포주소
 
 # git 설정정보 조회
 git config --list
+
+
+# 1. 타인의 레포 commit ID를 다 유지한 채 가져가기
+git clone 타인레포주소
+git remote set-url origin 내레포주소
+git push oritin main # 별도의 add, commit 필요 X
+
+# 2. 타인의 레포 commit ID 전부 없애고 가져가기
+git clone 타인레포주소
+# .git 폴더 삭제
+git remote add origin 레포주소
+git add .
+git commit -m "메세지"
+git push origin 브랜치명
+
+# 사용자 지정 방법
+# 전역적 사용자 (이름,이메일)
+git config --global user.name "깃네임" # 다른사람의 이름과 email로 변경을 하면, 그 계정으로 변경된다!
+git config --global user.email "깃이메일"
+
+# 지역적 사용자 (이름,이메일)
+# 현제 레포 안에서만 사용자 변경
+git config --local user.name "깃네임" # 다른사람의 이름과 email로 변경을 하면, 그 계정으로 변경된다!
+git config --local user.email "깃이메일"
+
+# config 내용조회
+# repository, 이름, email 등...
+git config --list
+
+# 사용자 이름 조회
+git config user.name
+# 사용자 이메일 조회
+git config user.email
+
+
+# git ignore 파일 실습
+# 확장자 .gitignore 파일 생성 후 git 추적 제외 대상 나열
+
+
+
