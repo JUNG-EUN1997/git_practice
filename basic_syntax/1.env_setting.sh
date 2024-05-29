@@ -1,3 +1,23 @@
+# git add . 으 모든 변경사항이 staging area로 이동
+git add .
+
+# git commit은 staging area에 변경사항 확정 및 commitID 생성
+git commit -m "메세지"
+
+# 원격 repo에 upload
+git push origin 브랜치명
+
+# github 인증방식 2가지
+# 1. token 인증방식
+
+# 2. 제 3자인증(oauth 인증방식)
+
+
+
+
+
+
+
 # git 프로젝트 생성방법 2가지
 # 방법1. 원격 repo 생성 후 clone
 
