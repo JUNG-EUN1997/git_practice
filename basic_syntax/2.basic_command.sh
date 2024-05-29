@@ -18,3 +18,20 @@ git log
 # log 간결
 git log --oneline
 git log --all
+# log를 그래프 형식으로 조회하기
+git log --graph
+
+# 충돌발생
+git push origin master --force
+
+# 특정 commit ID로 전환
+git checkout 커밋ID
+
+# 다시 현재의 master(브랜치)의 commit으로 return
+git checkout master
+
+# git pull은 원격의 변경사항을 local로 다운로드
+
+
+
+
