@@ -15,3 +15,6 @@ git commit #엔터
 
 # commit 이력 확인 (local )
 git log
+# log 간결
+git log --oneline
+git log --all
