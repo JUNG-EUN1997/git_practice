@@ -92,7 +92,6 @@ git stash show -p 인덱스
 git satsh clear
 
 
-
 # 브랜치 생성
 # 현재 checkout 하고 있는 브랜치를 기준으로 브랜치 생성
 git branch 브랜치명 # 생성은, 웹사이트에서 하는게 기본! > 최신 브랜치인지 확실하지 않아서
