@@ -74,5 +74,20 @@ git config user.email
 # git ignore 파일 실습
 # 확장자 .gitignore 파일 생성 후 git 추적 제외 대상 나열
 
+# git fetch
+# 원격에 변경사항을 로컬에 가져오되 병합은 하지 않는 것
+# 비교 : git pull, 
 
+# 작업 중인 사항을 임시저장
+git stash
+# 저장한 최신의 작업목록 꺼내기
+git stash pop
+# 저장한 목록 픽스, 작업목록 적용
+git stash apply stash@인덱스
+# 저장한 작업사항 목록조회
+git stash list
+# 저장한 작업목록 상세조회
+git stash show -p 인덱스
+# 저장한 stash 목록 전체 삭제
+git satsh clear
 
